@@ -31,6 +31,7 @@ public class EmployeeController {
 	@GetMapping("/allEemployees")
 	public ResponseEntity<List<Employee>> getAllEmployees() {
 		logger.info("allEemployees method Starting");
+		logger.info("allEemployees method Starting");
 		List<Employee> employees= employeeDao.getAllEmployees();
 		logger.info("ending allEemployees method Starting");
 		if (employees.isEmpty()) {
